@@ -55,7 +55,7 @@ const uint16_t PROGMEM bslash_combo[] =       {___N___, _SLASH_, COMBO_END};
 const uint16_t PROGMEM at_combo[] =           {___N___, _SQUOT_, COMBO_END};
 const uint16_t PROGMEM dollar_combo[] =       {___N___, _DQUOT_, COMBO_END};
 
-comb__t key_combos[] = {
+combo_t key_combos[] = {
 
   COMBO(enter_combo, _ENTER_),
   COMBO(backspace_combo, _BKSPC_),

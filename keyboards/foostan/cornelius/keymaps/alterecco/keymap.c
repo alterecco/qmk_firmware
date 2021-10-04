@@ -55,13 +55,11 @@ const key_override_t ctrl_h = ko_make_basic(MOD_MASK_CTRL, KC_H, C(KC_LEFT)); //
 const key_override_t ctrl_n = ko_make_basic(MOD_MASK_CTRL, KC_N, C(KC_UP));  //MocOS Desktop Navigation
 const key_override_t ctrl_t = ko_make_basic(MOD_MASK_CTRL, KC_T, C(KC_DOWN));  //MocOS Desktop Navigation
 const key_override_t ctrl_s = ko_make_basic(MOD_MASK_CTRL, KC_S, C(KC_RGHT));  //MocOS Desktop Navigation
-const key_override_t bsp_del = ko_make_basic(MOD_MASK_SHIFT, BSP_CMD, KC_DEL);  //  Shift+Bksp sends Delete
 
 const key_override_t **key_overrides = (const key_override_t *[]){
     &ctrl_h,
     &ctrl_n,
     &ctrl_t,
     &ctrl_s,
-    &bsp_del,
     NULL
 };

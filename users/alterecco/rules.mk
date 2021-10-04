@@ -4,9 +4,9 @@ ifeq ($(strip $(COMBO_ENABLE)), yes)
 	SRC += combos.c
 endif
 
-ifeq ($(strip $(KEY_OVERRIDE_ENABLE)), yes)
-	SRC += overrides.c
-endif
+# ifeq ($(strip $(KEY_OVERRIDE_ENABLE)), yes)
+# 	SRC += overrides.c
+# endif
 
 OLED_DRIVER_ENABLE = no
 ENCODER_ENABLE = no

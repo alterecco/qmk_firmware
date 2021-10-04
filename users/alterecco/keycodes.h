@@ -10,6 +10,7 @@ enum layers
 };
 
 #define XXXXXXX KC_NO
+#undef  _______
 #define _______ KC_NO
 #define ___     KC_NO
 

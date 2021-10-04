@@ -1,34 +1,4 @@
-SRC += alterecco.c
-
-ifeq ($(strip $(CUSTOM_ONESHOT_ENABLE)), yes)
-	SRC += ./features/oneshot.c
-	OPT_DEFS += -DCUSTOM_ONESHOT_ENABLE
-endif
-
-ifeq ($(strip $(CUSTOM_MODTAP_ENABLE)), yes)
-	SRC += ./features/mod_hold_n_tap.c
-	OPT_DEFS += -DCUSTOM_MODTAP_ENABLE
-endif
-
-ifeq ($(strip $(CUSTOM_REPEAT_KEY_ENABLE)), yes)
-	SRC += ./features/repeat_last_key.c
-	OPT_DEFS += -DCUSTOM_REPEAT_KEY_ENABLE
-endif
-
-ifeq ($(strip $(CUSTOM_NUM_WORD_ENABLE)), yes)
-	SRC += ./features/num_word.c
-	OPT_DEFS += -DCUSTOM_NUM_WORD_ENABLE
-endif
-
-ifeq ($(strip $(CUSTOM_NAV_WORD_ENABLE)), yes)
-	SRC += ./features/nav_word.c
-	OPT_DEFS += -DCUSTOM_NAV_WORD_ENABLE
-endif
-
-ifeq ($(strip $(CUSTOM_SYS_WORD_ENABLE)), yes)
-	SRC += ./features/sys_word.c
-	OPT_DEFS += -DCUSTOM_SYS_WORD_ENABLE
-endif
+SRC += $(USER_PATH)/alterecco.c
 
 ifeq ($(strip $(COMBO_ENABLE)), yes)
 	SRC += combos.c
@@ -37,3 +7,20 @@ endif
 ifeq ($(strip $(KEY_OVERRIDE_ENABLE)), yes)
 	SRC += overrides.c
 endif
+
+OLED_DRIVER_ENABLE = no
+ENCODER_ENABLE = no
+RGBLIGHT_ENABLE = no
+LEADER_ENABLE = no
+SPACE_CADET_ENABLE = no
+TAP_DANCE_ENABLE = no
+CONSOLE_ENBALE = no
+BACKLIGHT_ENABLE = no
+LED_MATRIX_ENABLE = no
+RGB_MATRIX_ENABLE = no
+SEQUENCER_ENABLE = no
+TERMINAL_ENABLE = no
+UNICODE_ENABLE = no
+WPM_ENABLE = no
+RAW_ENABLE = no
+MOUSEKEY_ENABLE = no

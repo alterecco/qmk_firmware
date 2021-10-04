@@ -13,7 +13,8 @@ jobs:
 
       matrix:
         keyboard:
-          - ferris/0_2
+          # - ferris/0_2
+          - foostan/cornelius
           # - planck/ez/glow
         keymap:
           - alterecco

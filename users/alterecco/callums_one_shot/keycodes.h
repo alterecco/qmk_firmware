@@ -1,38 +1,59 @@
 #pragma once
 
+#include "quantum.h"
+
 enum layers
 {
   DEF,
   NAV,
+  SYM,
   NUM,
-  WIN,
+  MUS,
   SYS,
 };
 
-#define XXXXXXX KC_NO
-#define _______ KC_NO
-#define ___     KC_NO
+enum keycodes
+{
+  o_RPT_o = SAFE_RANGE,
+  o_STP_o,
+  o_NUM_o,
+  o_NAV_o,
+  o_SYS_o,
 
-#define ___A___ MT(MOD_RSFT, KC_A)
+  // Oneshot mods with no timers.
+  o_SFT_o,
+  o_CTL_o,
+  o_OPT_o,
+  o_CMD_o,
+};
+
+#define XXXXXXX KC_NO
+
+#define __NAV__ OSL(NAV)
+#define __NUM__ OSL(NUM)
+#define o_SPC_o LT(SYM, KC_SPACE)
+#define oMOUSEo MO(MUS)
+
+#define ___A___ KC_A
 #define ___B___ KC_B
-#define ___C___ LT(SYS, KC_C)
-#define ___D___ MT(MOD_LSFT, KC_D)
-#define ___E___ MT(MOD_RGUI, KC_E)
+#define ___C___ KC_C
+#define ___D___ KC_D
+#define ___E___ KC_E
 #define ___F___ KC_F
 #define ___G___ KC_G
 #define ___H___ KC_H
-#define ___I___ LT(WIN, KC_I)
+#define ___I___ KC_I
 #define ___J___ KC_J
 #define ___K___ KC_K
 #define ___L___ KC_L
-#define ___M___ MT(MOD_LALT, KC_M)
-#define ___N___ MT(MOD_LGUI, KC_N)
+#define ___M___ KC_M
+#define ___N___ KC_N
 #define ___O___ KC_O
-#define ___P___ MT(MOD_LCTL, KC_P)
+#define ___P___ KC_P
 #define ___Q___ KC_Q
 #define ___R___ KC_R
-#define ___S___ LT(WIN, KC_S)
-#define ___T___ LT(NAV, KC_T)
+#define ___S___ KC_S
+#define ___T___ KC_T
 #define ___U___ KC_U
 #define ___V___ KC_V
 #define ___W___ KC_W
@@ -65,7 +86,7 @@ enum layers
 #define _LABRC_ KC_LEFT_ANGLE_BRACKET
 #define _RABRC_ KC_RIGHT_ANGLE_BRACKET
 
-#define __DOT__ MT(MOD_RCTL, KC_DOT)
+#define __DOT__ KC_DOT
 #define _COMMA_ KC_COMMA
 #define _SQUOT_ KC_QUOTE
 #define _DQUOT_ KC_DOUBLE_QUOTE
@@ -80,7 +101,7 @@ enum layers
 #define _ASTER_ KC_ASTERISK
 #define _HASH__ KC_HASH
 #define _DOLLR_ KC_DOLLAR
-#define _SLASH_ MT(MOD_RALT, KC_SLASH)
+#define _SLASH_ KC_SLASH
 #define _BSLSH_ KC_BSLASH
 #define _PERCT_ KC_PERCENT
 #define _AMPRS_ KC_AMPERSAND
@@ -95,24 +116,19 @@ enum layers
 #define _ENTER_ KC_ENTER
 #define _BKSPC_ KC_BSPACE
 #define __ESC__ KC_ESCAPE
-#define __DEL__ KC_DELETE
 
 #define _LEFT__ KC_LEFT
 #define __UP___ KC_UP
 #define _DOWN__ KC_DOWN
 #define _RIGHT_ KC_RIGHT
 
-#define _LSHFT_ OSM(KC_LSFT)
-#define _RSHFT_ OSM(KC_RSFT)
+#define _LSHFT_ KC_LSFT
 #define _LCTRL_ KC_LCTL
 #define _LOPT__ KC_LOPT
 #define _LCMD__ KC_LCMD
 
-#define _TABL__ LSFT(LCMD(KC_LBRACKET))
-#define _TABR__ LSFT(LCMD(KC_RBRACKET))
-
-#define _WNEXT_ LGUI(KC_NONUS_BSLASH)
-#define _WPREV_ LSFT(_WNEXT_)
+#define n_TABL_ LSFT(LCMD(_LBRAC_))
+#define n_TABR_ LSFT(LCMD(_RBRAC_))
 
 #define _RESET_ RESET
 

@@ -103,8 +103,8 @@ enum layers
 #define _DOWN__ KC_DOWN
 #define _RIGHT_ KC_RIGHT
 
-#define _LSHFT_ OSM(KC_LSFT)
-#define _RSHFT_ OSM(KC_RSFT)
+#define _LSHFT_ KC_LSF
+#define _RSHFT_ KC_RSFT
 #define _LCTRL_ KC_LCTL
 #define _LOPT__ KC_LOPT
 #define _LCMD__ KC_LCMD

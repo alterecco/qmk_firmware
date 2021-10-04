@@ -1,4 +1,5 @@
 #include <stdint.h>
+#include "process_combo.h"
 #include "config.h"
 #include "keycodes.h"
 
@@ -8,8 +9,8 @@ const uint16_t PROGMEM tab_combo[] =          {___U___, ___O___, COMBO_END};
 const uint16_t PROGMEM escape_combo[] =       {___S___, ___N___, COMBO_END};
 const uint16_t PROGMEM delete_combo[] =       {_SLASH_, _SQUOT_, COMBO_END};
 
-const uint16_t PROGMEM und__combo[] =         {___X___, ___C___, COMBO_END};
-const uint16_t PROGMEM red__combo[] =         {___X___, ___R___, COMBO_END};
+const uint16_t PROGMEM undo_combo[] =         {___X___, ___C___, COMBO_END};
+const uint16_t PROGMEM redo_combo[] =         {___X___, ___R___, COMBO_END};
 const uint16_t PROGMEM copy_combo[] =         {___G___, ___L___, COMBO_END};
 const uint16_t PROGMEM paste_combo[] =        {___L___, ___C___, COMBO_END};
 const uint16_t PROGMEM cut_combo[] =          {___G___, ___C___, COMBO_END};
@@ -62,8 +63,8 @@ comb__t key_combos[] = {
   COMBO(escape_combo, __ESC__),
   COMBO(delete_combo, __DEL__),
 
-  COMBO(und__combo, MAC_UNDO),
-  COMBO(red__combo, MAC_REDO),
+  COMBO(undo_combo, MAC_UNDO),
+  COMBO(redo_combo, MAC_REDO),
   COMBO(copy_combo, MAC_COPY),
   COMBO(paste_combo, MAC_PASTE),
   COMBO(cut_combo, MAC_CUT),

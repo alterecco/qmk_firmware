@@ -14,7 +14,7 @@ expanded before being used as arguments to the LAYOUT_xxx macro.
 #define ___________________HDG_L3__________________   ___X___, ___G___, ___L___, ___C___, ___B___
 #define ___________________HDG_L4__________________                              _LSHFT_, ___T___
 
-#define ___________________HDG_R1__________________   _GRAVE_, __DOT__, __SLH__, _SQUOT_, _DQUOT_
+#define ___________________HDG_R1__________________   _GRAVE_, __DOT__, _SLASH_, _SQUOT_, _DQUOT_
 #define ___________________HDG_R2__________________   _COMMA_, ___A___, ___E___, ___I___, ___H___
 #define ___________________HDG_R3__________________   _MINUS_, ___U___, ___O___, ___Y___, ___K___
 #define ___________________HDG_R4__________________   _SPACE_, _RSHFT_

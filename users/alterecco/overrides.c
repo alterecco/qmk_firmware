@@ -1,3 +1,4 @@
+#include "process_key_override.h"
 #include "keycodes.h"
 
 const key_override_t** key_overrides = (const key_override_t*[]){

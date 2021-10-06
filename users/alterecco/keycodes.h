@@ -32,7 +32,7 @@ enum layers
 #define ___P___ MT(MOD_LCTL, KC_P)
 #define ___Q___ KC_Q
 #define ___R___ KC_R
-#define ___S___ LT(WIN, KC_S)
+#define ___S___ LT(NUM, KC_S)
 #define ___T___ LT(NAV, KC_T)
 #define ___U___ KC_U
 #define ___V___ KC_V

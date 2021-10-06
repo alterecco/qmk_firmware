@@ -9,7 +9,7 @@ const uint16_t PROGMEM tab_combo[] =          {___U___, ___O___, COMBO_END};
 const uint16_t PROGMEM escape_combo[] =       {___S___, ___N___, COMBO_END};
 const uint16_t PROGMEM delete_combo[] =       {_SLASH_, _SQUOT_, COMBO_END};
 
-const uint16_t PROGMEM undo_combo[] =         {___X___, ___C___, COMBO_END};
+const uint16_t PROGMEM undo_combo[] =         {___X___, ___G___, COMBO_END};
 const uint16_t PROGMEM redo_combo[] =         {___X___, ___R___, COMBO_END};
 const uint16_t PROGMEM copy_combo[] =         {___G___, ___L___, COMBO_END};
 const uint16_t PROGMEM paste_combo[] =        {___L___, ___C___, COMBO_END};
